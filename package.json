@@ -1,0 +1,25 @@
+{
+  "name": "meet-queue-discord",
+  "version": "1.0.0",
+  "description": "A Discord bot to track the order of users joining and leaving voice channels.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.8.0",
+    "prettier": "3.3.3"
+  }
+}
