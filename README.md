@@ -7,9 +7,11 @@ This Discord bot tracks the order in which users join and leave voice channels. 
 - **Track User Entry and Exit:** Automatically logs the order in which users join and leave voice channels.
 - **Set Meeting Start Time:** Allows users to set the start time for tracking using a command.
 - **Display Order:** Provides a command to display the current order of users in each voice channel.
+- **Help Command:** Provides a summary of available commands and their functionalities.
 
 ## Commands
 
-- `/init`: Sets the current text channel as the notification channel for bot messages.
-- `/set-meet-time HH:MM`: Sets the time (in 24-hour format) to start tracking user entries and exits.
-- `/order`: Displays the current order of users in each voice channel.
+- **/init**: Sets the current text channel as the notification channel for bot messages.
+- **/set-meet-time HH:MM**: Sets the time (in 24-hour format) to start tracking user entries and exits.
+- **/order**: Displays the current order of users in each voice channel.
+- **/help**: Displays a list of available commands and their descriptions.
