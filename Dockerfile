@@ -18,7 +18,7 @@ ENV NODE_ENV=production
 
 # Expone el puerto que tu aplicación usará (opcional, para propósitos de documentación)
 # No es realmente necesario para Discord.js, ya que no abre un puerto
-# EXPOSE 3000
+EXPOSE 8080
 
 # Comando para ejecutar tu aplicación
 CMD ["npm", "start"]
