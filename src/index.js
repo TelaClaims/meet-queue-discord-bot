@@ -1,8 +1,8 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
 import "dotenv/config";
+import express from 'express';
 import { checkTime } from "./utils.js";
 
-import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 8080;
 
