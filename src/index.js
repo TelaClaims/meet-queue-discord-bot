@@ -1,6 +1,10 @@
+import { Client, Events, GatewayIntentBits } from "discord.js";
 import "dotenv/config";
-import { Client, GatewayIntentBits, Events } from "discord.js";
 import { checkTime } from "./utils.js";
+
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 8080;
 
 const client = new Client({
   intents: [
@@ -198,3 +202,12 @@ client.on(Events.VoiceStateUpdate, (oldState, newState) => {
 });
 
 client.login(token);
+
+
+app.get('/', (req, res) => {
+  res.send('Bot is running!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
